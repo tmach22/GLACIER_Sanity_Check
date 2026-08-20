@@ -1,0 +1,17 @@
+dataset: nist20
+split: scaffold_1
+model: glacier
+checkpoint: weights/glacier_nist20_split1_rnd1_best.ckpt
+run: cosine_similarity_eval (smoke_test_300, true molecules only)
+adduct_filter: '[M+H]+'
+source_file: retrieval_accuracy_results/scaffold_1/smoke_test_300/cosine_similarity_eval/pred_eval_grouped_ion_type.tsv
+num_examples: 2329.0
+avg_cos_sim: 0.8775127482272208
+avg_cos_sim_zero_pep: 0.8775954353177225
+avg_mse: 8.2963467971052e-05
+avg_entropy_sim: 0.8088648491167336
+avg_overlap_coeff: 0.797476926950909
+avg_coverage: 0.7496899056576224
+avg_len_targ: 25.74624302275655
+avg_len_pred: 41.66895663374839
+avg_compound_mass: 303.8757678498901

@@ -1,0 +1,17 @@
+dataset: nist20
+split: scaffold_1
+model: glacier
+checkpoint: weights/glacier_nist20_split1_rnd1_best.ckpt
+run: cosine_similarity_eval (full test set)
+adduct_filter: '[M+H]+'
+source_file: retrieval_accuracy_results/scaffold_1/cosine_similarity_eval/pred_eval_grouped_ion_type.tsv
+num_examples: 39863.0
+avg_cos_sim: 0.8861752060691959
+avg_cos_sim_zero_pep: 0.8863376748251109
+avg_mse: 7.276027561261444e-05
+avg_entropy_sim: 0.8173342753929311
+avg_overlap_coeff: 0.7967819284210792
+avg_coverage: 0.7528020168244882
+avg_len_targ: 24.811955949125757
+avg_len_pred: 41.4925620249354
+avg_compound_mass: 305.6320157774145
